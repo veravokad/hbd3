@@ -1,0 +1,61 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Эля: Мем-сюрприз</title>
+<style>
+  body{background:#fef9e7;font-family:sans-serif;display:flex;flex-direction:column;
+       align-items:center;justify-content:center;height:100vh;margin:0;text-align:center;}
+  img{max-width:90vw;max-height:70vh;border-radius:8px;box-shadow:0 4px 12px #0002;cursor:pointer;}
+  button{margin-top:1rem;padding:.6rem 1.2rem;border:2px solid #f4c76c;background:#fff;border-radius:8px;font-size:1rem;cursor:pointer;}
+  button:hover{background:#fff2cc;}
+</style>
+
+<img id="pic" alt="Мем" onclick="show()">
+<button onclick="show()">Ещё!</button>
+
+<script>
+  const imgs = [
+  "0w3c-8I15Yk - Илья Штольц.jpg",
+  "2F4vmD7isac - Александра Жабицкая.jpg",
+  "2F60NKjZ_dA - Александра Жабицкая.jpg",
+  "5KsIsA5MDfQ - Александра Жабицкая.jpg",
+  "70MiXzlMl2A - Александра Жабицкая.jpg",
+  "IMG_0155 - E Bucha.jpeg",
+  "IMG_1140 - E Bucha.jpeg",
+  "IMG_20231110_002121_026 - Илья Штольц.jpg",
+  "IMG_20240317_100855_327 - Илья Штольц.jpg",
+  "IMG_20250613_102831_756 - Илья Штольц.jpg",
+  "IMG_20250613_102837_150 - Илья Штольц.jpg",
+  "IMG_20250613_102928_570 - Илья Штольц.jpg",
+  "IMG_4313 - Александр Тарасов.jpeg",
+  "IMG_4614 - Natalia Shishkina.png",
+  "IMG_5300 - Zhaniya Fazylova.jpeg",
+  "IMG_5301 - Zhaniya Fazylova.jpeg",
+  "IMG_5302 - Zhaniya Fazylova.jpeg",
+  "IMG_5303 - Zhaniya Fazylova.jpeg",
+  "IMG_5304 - Zhaniya Fazylova.jpeg",
+  "IMG_6864 - I P.jpeg",
+  "IMG_6865 - I P.jpeg",
+  "IMG_7746 - E Bucha.jpeg",
+  "IMG_7981 - Natalia Shishkina.jpeg",
+  "IMG_7983 - Natalia Shishkina.jpeg",
+  "IVJ9b6Jv9j8 - Александра Жабицкая.jpg",
+  "Screenshot_20240201_015950_Instagram - Илья Штольц.jpg",
+  "Screenshot_20250215_215323_Instagram - Илья Штольц.jpg",
+  "Screenshot_20250224_015059_Instagram - Илья Штольц.jpg",
+  "Screenshot_20250613_095725_Instagram - Илья Штольц.jpg",
+  "camphoto_758783491 - art.jpeg",
+  "kZ-Tyl7vwss - Александра Жабицкая.jpg",
+  "photo_2025-06-19_11-28-31 (2) - Александра Жабицкая.jpg",
+  "photo_2025-06-19_11-28-31 - Александра Жабицкая.jpg",
+  "u4vlNZxNKG0 - Александра Жабицкая.jpg",
+  "w7BVG18zuIY - Александра Жабицкая.jpg",
+  "меме.jpg",
+  "меме2.jpg",
+  "меме3.jpg",
+  "эля - Vera Sudakova.jpg"
+];
+  function show() {
+    pic.src = imgs[Math.floor(Math.random()*imgs.length)];
+  }
+  window.onload = show;
+</script>
